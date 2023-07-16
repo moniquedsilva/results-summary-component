@@ -29,7 +29,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
+  align-items: center;  font-family: var(--font-family);
   background-color: var(--white);
 }
 
@@ -45,13 +45,68 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
-  padding: 1rem;
-  height: calc(100vh - 50vh);
-  width: 50%;
+  gap: 1.5rem;
+  padding: 2rem;
+  width: 100%;
   background: var(--gradient-background);
   background: linear-gradient(180deg, var(--gradient-background) 0%, var(--gradient-background2) 100%);
-  border-radius: 0 0 35px 35px;
+  border-radius: 0 0 32px 32px;
+  box-sizing: border-box;
+}
+
+.results__score h1 {
+  font-size: 18px;
+  font-weight: var(--font-weight-700);
+  color: var(--light-lavander);
+}
+
+.results__score__circle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: var(--gradient-circle);
+  background: linear-gradient(-180deg, var(--gradient-circle) 0%, transparent 100%);
+  box-shadow: 0px 1px 2px 0px hsla(0, 0%, 0%, 0.05);
+}
+
+.results__score__circle p {
+  font-size: 60px;
+  font-weight: var(--font-weight-800);
+  color: var(--white);
+}
+
+.results__score__circle span {
+  font-size: 18px;
+  font-weight: var(--font-weight-500);
+  color: #8D82FF;
+}
+
+.results__score__result {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.results__score__result span {
+  font-size: 24px;
+  font-weight: var(--font-weight-700);
+  color: var(--white);
+}
+
+.results__score__result p {
+  text-align: center;
+  width: 100%;
+  max-width: 270px;
+  font-size: 16px;
+  font-weight: var(--font-weight-500);
+  color: var(--light-lavander);
 }
 
 .results__summary {
@@ -59,8 +114,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: calc(100vh - 50vh);
-  width: 50%;
+  width: 100%;
   background-color: var(--white);
   border-radius: 35px 35px 0 0;
 }
